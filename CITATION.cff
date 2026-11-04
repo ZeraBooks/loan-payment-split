@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use these files, please cite them as below."
+title: "Loan payment split"
+type: dataset
+authors:
+  - name: "ZeraBooks"
+    website: "https://www.zerabooks.com"
+url: "https://github.com/ZeraBooks/loan-payment-split"
+repository-code: "https://github.com/ZeraBooks/loan-payment-split"
+license: CC-BY-4.0
+abstract: "To record a business loan payment, split it: principal reduces the loan liability, interest goes to interest expense, and any fee goes to its own expense line, all credited to the bank account the money left. This repo has a script that builds the amortization schedule from the amount, rate and term, a second script that turns each payment into a balanced journal entry, and a sample 36-month schedule for a fictional equipment loan."
+keywords:
+  - amortization
+  - loan-payments
+  - journal-entries
+  - bookkeeping
+  - accounting
+date-released: 2026-11-04

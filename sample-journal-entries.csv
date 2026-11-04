@@ -1,0 +1,11 @@
+Date,Memo,Account,Debit,Credit
+2026-01-02,Loan payment 1,Loan payable,898.87,
+2026-01-02,Loan payment 1,Interest expense,216.00,
+2026-01-02,Loan payment 1,Cash: checking,,1114.87
+2026-02-02,Loan payment 2,Loan payable,904.26,
+2026-02-02,Loan payment 2,Interest expense,210.61,
+2026-02-02,Loan payment 2,Cash: checking,,1114.87
+2026-03-13,Loan payment 3,Loan payable,909.69,
+2026-03-13,Loan payment 3,Interest expense,205.18,
+2026-03-13,Loan payment 3,Bank and loan fees,35.00,
+2026-03-13,Loan payment 3,Cash: checking,,1149.87
