@@ -1,0 +1,10 @@
+id,severity,applies_to,rule,why it matters
+LOAN-001,error,schedule; lender statement,Total paid equals interest plus principal (plus fees on a lender statement),A payment that doesn't add up was typed or read wrong. Every later balance inherits the error.
+LOAN-002,error (warning with --interest lender),schedule,"Interest equals the balance owed before the payment times the annual rate divided by 12, rounded to the cent",This is how a fixed-rate monthly loan is worked out. Lenders that charge by the day differ by a few cents or dollars; then the lender's statement wins.
+LOAN-003,error,schedule,Balance after equals the balance before minus the principal in this payment,A broken chain means a payment's principal and the balance were copied from different places.
+LOAN-004,error,schedule,Payment numbers run 1 to N with no gaps and dates go forward,A skipped number is usually a payment left out of the file.
+LOAN-005,error,schedule,The last payment leaves 0.00 owing and the principal adds up to the amount borrowed,A schedule that doesn't clear the loan was built from the wrong rate or term.
+LOAN-006,error,journal entries,Every entry (same date and memo) has debits equal to credits and no line has both,An entry that doesn't balance can't be posted. A line with both columns filled is ambiguous.
+LOAN-007,error,books vs lender,The loan payable balance in the books on each statement date equals the principal balance the lender prints,This is the loan's reconciliation. The checker names the usual cause when the difference matches a pattern.
+LOAN-008,warning,books vs lender,When the lender charged interest some interest was booked to Interest expense,No interest at all means whole payments went to the loan or to an expense account.
+LOAN-009,error,all files,Amounts are plain numbers with two decimals: no dollar sign and no thousands comma,Formatted amounts break sums and imports.

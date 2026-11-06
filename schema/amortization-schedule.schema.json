@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/ZeraBooks/loan-payment-split/main/schema/amortization-schedule.schema.json",
+  "title": "Amortization schedule row",
+  "description": "One row of a loan amortization schedule CSV. Each CSV cell is a string. Rules LOAN-001 to LOAN-005 in rules/loan-rules.csv apply across rows.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "Payment",
+    "Date",
+    "Total paid",
+    "Interest",
+    "Principal",
+    "Balance after"
+  ],
+  "properties": {
+    "Payment": {
+      "type": "string",
+      "pattern": "^[1-9][0-9]*$",
+      "description": "Payment number, 1 to N with no gaps."
+    },
+    "Date": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "format": "date",
+      "description": "Due date of the payment, YYYY-MM-DD."
+    },
+    "Total paid": {
+      "type": "string",
+      "pattern": "^-?(0|[1-9][0-9]*)\\.[0-9]{2}$",
+      "description": "Interest plus principal for this payment."
+    },
+    "Interest": {
+      "type": "string",
+      "pattern": "^-?(0|[1-9][0-9]*)\\.[0-9]{2}$",
+      "description": "Balance owed before the payment x annual rate / 12, rounded to the cent."
+    },
+    "Principal": {
+      "type": "string",
+      "pattern": "^-?(0|[1-9][0-9]*)\\.[0-9]{2}$",
+      "description": "Total paid minus interest. Reduces the loan."
+    },
+    "Balance after": {
+      "type": "string",
+      "pattern": "^-?(0|[1-9][0-9]*)\\.[0-9]{2}$",
+      "description": "Balance before minus principal. 0.00 after the last payment."
+    }
+  }
+}

@@ -1,0 +1,7 @@
+Date,Memo,Account,Debit,Credit
+2025-12-01,Loan funded,Cash: checking,35460.00,
+2025-12-01,Loan funded,Loan fees,540.00,
+2025-12-01,Loan funded,Loan payable,,36000.00
+2026-01-02,Loan payment 1,Loan payable,898.87,
+2026-01-02,Loan payment 1,Interest expense,261.00,
+2026-01-02,Loan payment 1,Cash: checking,,1114.87

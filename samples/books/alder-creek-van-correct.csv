@@ -1,0 +1,27 @@
+Date,Memo,Account,Debit,Credit
+2026-02-13,Loan funded,Cash: checking,48500.00,
+2026-02-13,Loan funded,Loan payable,,48500.00
+2026-03-15,Van loan payment 1,Loan payable,653.22,
+2026-03-15,Van loan payment 1,Interest expense,339.50,
+2026-03-15,Van loan payment 1,Cash: checking,,992.72
+2026-04-15,Van loan payment 2,Loan payable,657.79,
+2026-04-15,Van loan payment 2,Interest expense,334.93,
+2026-04-15,Van loan payment 2,Cash: checking,,992.72
+2026-05-15,Van loan payment 3,Loan payable,662.40,
+2026-05-15,Van loan payment 3,Interest expense,330.32,
+2026-05-15,Van loan payment 3,Cash: checking,,992.72
+2026-06-15,Van loan payment 4,Loan payable,667.03,
+2026-06-15,Van loan payment 4,Interest expense,325.69,
+2026-06-15,Van loan payment 4,Cash: checking,,992.72
+2026-07-15,Van loan payment 5,Loan payable,671.70,
+2026-07-15,Van loan payment 5,Interest expense,321.02,
+2026-07-15,Van loan payment 5,Cash: checking,,992.72
+2026-08-15,Van loan payment 6,Loan payable,676.40,
+2026-08-15,Van loan payment 6,Interest expense,316.32,
+2026-08-15,Van loan payment 6,Cash: checking,,992.72
+2026-09-15,Van loan payment 7,Loan payable,681.14,
+2026-09-15,Van loan payment 7,Interest expense,311.58,
+2026-09-15,Van loan payment 7,Cash: checking,,992.72
+2026-10-15,Van loan payment 8,Loan payable,685.91,
+2026-10-15,Van loan payment 8,Interest expense,306.81,
+2026-10-15,Van loan payment 8,Cash: checking,,992.72

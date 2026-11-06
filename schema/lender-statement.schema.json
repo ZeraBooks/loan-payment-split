@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/ZeraBooks/loan-payment-split/main/schema/lender-statement.schema.json",
+  "title": "Lender statement row",
+  "description": "One payment as the lender's monthly statement reports it. Copy these figures from the payment, not the year-to-date column.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "Statement date",
+    "Payment received",
+    "Applied to principal",
+    "Applied to interest",
+    "Fees",
+    "Principal balance after"
+  ],
+  "properties": {
+    "Statement date": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "format": "date",
+      "description": "Date the lender applied the payment."
+    },
+    "Payment received": {
+      "type": "string",
+      "pattern": "^-?(0|[1-9][0-9]*)\\.[0-9]{2}$",
+      "description": "What the lender received. Matches the withdrawal on the bank statement."
+    },
+    "Applied to principal": {
+      "type": "string",
+      "pattern": "^-?(0|[1-9][0-9]*)\\.[0-9]{2}$"
+    },
+    "Applied to interest": {
+      "type": "string",
+      "pattern": "^-?(0|[1-9][0-9]*)\\.[0-9]{2}$"
+    },
+    "Fees": {
+      "type": "string",
+      "pattern": "^$|^(0|[1-9][0-9]*)\\.[0-9]{2}$",
+      "description": "Late or other fees in this payment. Blank means 0.00."
+    },
+    "Principal balance after": {
+      "type": "string",
+      "pattern": "^-?(0|[1-9][0-9]*)\\.[0-9]{2}$",
+      "description": "What the loan payable account in the books should show on the same date."
+    }
+  }
+}

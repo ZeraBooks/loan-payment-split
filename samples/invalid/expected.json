@@ -1,0 +1,40 @@
+{
+  "balance-chain-broken.csv": {
+    "args": [],
+    "command": "schedule",
+    "rule": "LOAN-003"
+  },
+  "currency-symbol-in-amount.csv": {
+    "args": [],
+    "command": "schedule",
+    "rule": "LOAN-009"
+  },
+  "does-not-clear.csv": {
+    "args": [],
+    "command": "schedule",
+    "rule": "LOAN-005"
+  },
+  "entry-does-not-balance.csv": {
+    "args": [],
+    "command": "entries",
+    "rule": "LOAN-006"
+  },
+  "interest-not-balance-times-rate.csv": {
+    "args": [
+      "--rate",
+      "7.20"
+    ],
+    "command": "schedule",
+    "rule": "LOAN-002"
+  },
+  "payment-number-gap.csv": {
+    "args": [],
+    "command": "schedule",
+    "rule": "LOAN-004"
+  },
+  "total-not-interest-plus-principal.csv": {
+    "args": [],
+    "command": "schedule",
+    "rule": "LOAN-001"
+  }
+}
