@@ -133,7 +133,7 @@ Add `--json` before the command for machine-readable output. Exit codes: 0 no er
 
 ZeraBooks works from the bank statements you upload. It has no lender or bank connection. A loan payment on the bank statement goes to the loan account. At month end, Autopilot asks for the loan's rate, then moves each month's interest from the loan to Interest Expense: the balance owed x the rate / 12. It never splits interest from a guessed rate, and later months reuse your answer. Every entry is listed in Done by AI, where you can undo it. Upload the lender's statements with the bank statements and Ask Zera uses them as evidence. At year end, Financials flags any loan that received six or more payments with no interest recorded.
 
-ZeraBooks is $79 a month billed annually or $149 month to month, with a 7-day trial. Prefer to hand the books over? ZeraBooks [bookkeeping services](https://www.zerabooks.com/bookkeeping-services) start from $150 a month (USD).
+ZeraBooks is $79 a month billed annually or $149 month to month, with a 7-day trial. Setup and a catch-up of your past months are free.
 
 ## FAQ
 
@@ -175,4 +175,4 @@ Full guide: [How to record loan payments](https://www.zerabooks.com/how-to-recor
 
 The content and data in this repository are licensed under [CC BY 4.0](LICENSE). The code (`*.py`) is licensed under [MIT](LICENSE-CODE). Cite it with [`CITATION.cff`](CITATION.cff) or as: ZeraBooks, *Loan Payment Split*, v1.1.0, 2026, https://github.com/ZeraBooks/loan-payment-split.
 
-ZeraBooks is an AI-native general ledger, bank statement converter and done-for-you bookkeeping service for small businesses and accounting firms. Maintained by [ZeraBooks](https://www.zerabooks.com).
+ZeraBooks is accounting software that does your books for you, with free setup and a free catch-up of your past months. Maintained by [ZeraBooks](https://www.zerabooks.com).
