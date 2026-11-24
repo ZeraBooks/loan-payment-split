@@ -169,10 +169,10 @@ python3 -m unittest discover -s tests -v
 
 ## Learn more
 
-Full guide: [How to record loan payments](https://www.zerabooks.com/how-to-record-loan-payments). Related: [ZeraBooks general ledger software](https://www.zerabooks.com/general-ledger-software) and [loan statement to Excel](https://www.zerabooks.com/loan-statement-to-excel).
+Full guide: How to record loan payments. Related: [ZeraBooks general ledger software](https://www.zerabooks.com/general-ledger-software) and loan statement to Excel.
 
 ## License and citation
 
 The content and data in this repository are licensed under [CC BY 4.0](LICENSE). The code (`*.py`) is licensed under [MIT](LICENSE-CODE). Cite it with [`CITATION.cff`](CITATION.cff) or as: ZeraBooks, *Loan Payment Split*, v1.1.0, 2026, https://github.com/ZeraBooks/loan-payment-split.
 
-ZeraBooks is AI bookkeeping software that runs your books. Catch-up of past months is included: you upload the statements and ZeraBooks does them. Maintained by [ZeraBooks](https://www.zerabooks.com).
+ZeraBooks is AI bookkeeping software that runs your books. Catch-up of past months is included: you upload the statements and ZeraBooks does them. Maintained by ZeraBooks.
